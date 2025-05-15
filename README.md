@@ -32,7 +32,7 @@ This system models smart devices such as lights, thermostats, and cameras, demon
 <details>
   <summary>Click to expand UML diagram (Text)</summary>
 
----
+```
 
 +-------------------------+
 | SmartDevice             |
@@ -46,16 +46,16 @@ This system models smart devices such as lights, thermostats, and cameras, demon
 | + getDeviceInfo():String|
 +-------------------------+
 
-+-------------------------+ +--------------------------+
-| SmartLight              | | SmartThermostat          |
-+-------------------------+ +--------------------------+
-| - brightnessLevel: int  | | - temperature: double     |
-| - color: String         | +--------------------------+
-+-------------------------+ | + setTemperature(double) |
-| + setBrightness(int)    | | + getTemperature():double|
-| + setColor(String)      | | + getDeviceInfo():String |
-| + getDeviceInfo():String| +--------------------------+
-+-------------------------+
++--------------------------+   +--------------------------+
+| SmartLight               |   | SmartThermostat          |
++--------------------------+   +--------------------------+
+| - brightnessLevel: int   |   | - temperature: double    |
+| - color: String          |   +--------------------------+
++--------------------------+   | + setTemperature(double) |
+| + setBrightness(int)     |   | + getTemperature():double|
+| + setColor(String)       |   | + getDeviceInfo():String |
+| + getDeviceInfo():String |   +--------------------------+
++---------------------------+
 |
 |
 +-------------------------+
@@ -69,3 +69,6 @@ This system models smart devices such as lights, thermostats, and cameras, demon
 | + addStorage(int)       |
 | + getDeviceInfo():String|
 +-------------------------+
+
+```
+</details>
